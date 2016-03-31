@@ -64,6 +64,9 @@ function omf -d "Oh My Fish"
     case "u" "update"
       omf.cli.update $arguments
 
+    case "channel"
+      omf.cli.channel $arguments
+
     case "search"
       omf.cli.search $arguments
 
