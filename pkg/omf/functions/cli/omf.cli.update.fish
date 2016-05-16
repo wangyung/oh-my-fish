@@ -29,4 +29,5 @@ function omf.cli.update
   # Opt-in flag for testing
   set -q OMF_AUTO_RELOAD
     and omf.cli.reload
+    or return 0
 end

@@ -8,5 +8,4 @@ function omf.channel.set -a name
   echo $name > $OMF_CONFIG/channel
   echo "Update channel set to "(omf::em)"$name"(omf::off)"."
   echo "To switch to the latest $name version, run "(omf::em)"omf update"(omf::off)"."
-  return 0
 end
