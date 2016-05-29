@@ -16,6 +16,8 @@ function _is_git_dirty
   echo (command git status -s --ignore-submodules=dirty $untracked ^/dev/null)
 end
 
+set -x LSCOLORS "Exgxcxdxbxegedabagacad"
+
 function fish_prompt
   set -l last_status $status
   set -l cyan (set_color -o cyan)
